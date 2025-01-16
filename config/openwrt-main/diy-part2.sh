@@ -25,6 +25,22 @@ echo "DISTRIB_SOURCECODE='official'" >>package/base-files/files/etc/openwrt_rele
 # Add luci-app-amlogic
 rm -rf package/luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+git clone https://github.com/jerrykuku/luci-theme-argon.git  package/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config.git  package/luci-app-argon-config
+git clone https://github.com/muink/openwrt-fchomo.git  package/openwrt-fchomo
+git clone https://github.com/vernesong/OpenClash.git --branch master --single-branch --depth 1 package/luci-app-openclash
+git clone https://github.com/asvow/luci-app-tailscale package/luci-app-tailscale
+git clone https://github.com/muink/luci-app-tinyfilemanager.git package/luci-app-tinyfilemanager
+git clone https://github.com/lxiaya/openwrt-homeproxy.git package/openwrt-homeproxy
+git clone https://github.com/muink/luci-app-tn-netports.git package/luci-app-tn-netports
+git clone https://github.com/gSpotx2f/luci-app-log.git package/luci-app-log
+git clone https://github.com/gSpotx2f/luci-app-cpu-status.git package/luci-app-cpu-status
+git clone https://github.com/gSpotx2f/luci-app-internet-detector.git package/luci-app-internet-detector
+git clone https://github.com/animegasan/luci-app-ipinfo.git package/luci-app-ipinfo
+git clone https://github.com/sbwml/luci-app-mosdns.git package/luci-app-mosdns
+git clone https://github.com/gw826943555/openwrt-cpufreq.git package/openwrt-cpufreq
+git clone https://github.com/4IceG/luci-app-3ginfo-lite.git package/luci-app-3ginfo-lite
+
 #
 # Apply patch
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci

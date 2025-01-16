@@ -12,3 +12,4 @@
 # other
 # rm -rf package/utils/{ucode,fbtest}
 
+echo 'MBIM=1' > package/utils/usbmode/data/413c-81d7
